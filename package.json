@@ -22,5 +22,13 @@
     "typescript": "^5.5.4",
     "vite": "^5.4.2",
     "vitest": "^2.1.1"
-  }
+  },
+  "description": "This project is set up with mise for Node.js v22 and includes essential development tools.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
