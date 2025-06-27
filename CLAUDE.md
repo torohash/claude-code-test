@@ -3,7 +3,7 @@
 ## Code Quality Checks
 When you have completed implementation tasks in this project, ALWAYS run the following command before finalizing:
 ```bash
-mise run check
+npm run check
 ```
 
 This command will:
