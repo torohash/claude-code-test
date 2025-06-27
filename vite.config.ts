@@ -1,22 +1,15 @@
-import { defineConfig } from 'vite'
 import { resolve } from 'node:path'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   root: '.',
   build: {
     outDir: 'dist',
     target: 'esnext',
-    lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
-      name: 'MyLibrary',
-      fileName: 'index',
-    },
-    rollupOptions: {
-      external: [],
-      output: {
-        globals: {},
-      },
-    },
+  },
+  server: {
+    port: 3000,
+    open: process.env.CI ? false : true,
   },
   resolve: {
     alias: {
