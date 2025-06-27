@@ -1,0 +1,15 @@
+[tools]
+node = "22"
+biome = "latest"
+
+[tasks.lint]
+run = "biome lint ."
+description = "Run Biome linter"
+
+[tasks.format]
+run = "biome format --write ."
+description = "Format code with Biome"
+
+[tasks.check]
+run = "biome check --write ."
+description = "Run Biome lint and format"
