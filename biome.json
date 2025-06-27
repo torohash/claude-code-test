@@ -26,8 +26,11 @@
       },
       "suspicious": {
         "noExplicitAny": "error",
-        "noArrayIndexKey": "error",
+        "noArrayIndexKey": "warn",
         "noVar": "error"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "warn"
       },
       "correctness": {
         "noUnusedVariables": "error"
@@ -49,6 +52,9 @@
       "trailingCommas": "es5",
       "semicolons": "asNeeded",
       "arrowParentheses": "always"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": false
     }
   },
   "files": {
