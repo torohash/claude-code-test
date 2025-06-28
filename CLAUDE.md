@@ -15,3 +15,9 @@ This command will:
 - This project uses Biome for both linting and formatting
 - All JavaScript/TypeScript files should pass Biome checks
 - The configuration is defined in biome.json
+
+## TailwindCSS v4 Configuration
+When working with TailwindCSS v4:
+- ALWAYS check if @tailwindcss/postcss is installed before configuring PostCSS
+- Use '@tailwindcss/postcss' in postcss.config.js, NOT 'tailwindcss'
+- TailwindCSS v4 requires the separate PostCSS plugin package
