@@ -11,7 +11,7 @@ export default defineConfig({
   },
   server: {
     port: 3000,
-    open: process.env.CI ? false : true,
+    open: !process.env.CI,
   },
   resolve: {
     alias: {
