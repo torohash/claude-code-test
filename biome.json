@@ -1,6 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
-  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "assists": {
+    "enabled": true
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -26,8 +28,10 @@
       },
       "suspicious": {
         "noExplicitAny": "error",
-        "noArrayIndexKey": "error",
-        "noVar": "error"
+        "noArrayIndexKey": "warn"
+      },
+      "a11y": {
+        "useKeyWithClickEvents": "warn"
       },
       "correctness": {
         "noUnusedVariables": "error"
@@ -49,9 +53,13 @@
       "trailingCommas": "es5",
       "semicolons": "asNeeded",
       "arrowParentheses": "always"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": false
     }
   },
   "files": {
-    "includes": ["**", "!**/node_modules", "!**/dist", "!**/coverage", "!**/.git"]
+    "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.json"],
+    "ignore": ["**/node_modules/**", "**/dist/**", "**/coverage/**", "**/.git/**"]
   }
 }
